@@ -15,6 +15,7 @@ ament_auto_find_build_dependencies()
 
 include_directories(${Boost_INCLUDE_DIRS})
 
+add_compile_options(-w)
 add_executable(lgsvl_bridge
   src/bridge.cc
   src/client.cc
